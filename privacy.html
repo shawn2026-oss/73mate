@@ -63,12 +63,12 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="subtitle">73MATE App &mdash; Last updated: March 19, 2026</p>
+        <p class="subtitle">73MATE App (iOS and Android) &mdash; Last updated: October 11, 2026</p>
 
         <div class="card">
             <h2>Overview</h2>
             <p>"73MATE" is developed and maintained by Super73 Lab Taiwan. We take your privacy seriously. This privacy policy explains how the App handles your data.</p>
-            <p><strong>In short: 73MATE does not collect, transmit, or store any personal data on external servers. All your data stays on your device.</strong></p>
+            <p><strong>In short: 73MATE has no accounts and no servers of its own. Your bike data stays on your device. Your location leaves your device only for the features that need it &mdash; weather, map search and route planning &mdash; as described below.</strong></p>
 
             <h2>Data Collection</h2>
             <p>This App <strong>does not</strong> collect any of the following:</p>
@@ -83,13 +83,23 @@
             <p>73MATE connects to your Super73 bike via Bluetooth Low Energy (BLE) to read vehicle data and send control commands. All communication occurs directly between your device and your bike. No data is transmitted to any server.</p>
 
             <h2>Location Data</h2>
-            <p>73MATE uses your device's location services for ride tracking and navigation features. Location data is processed locally on your device and is not sent to any external server.</p>
+            <p>73MATE uses your device's location for the speedometer, ride distance, weather and navigation. Speed and ride statistics are calculated on your device and are never uploaded.</p>
+            <p>While your bike is connected and a ride is in progress, the App keeps using location in the background so the ride is recorded with the screen off. On Android this runs as a foreground service with a visible notification, which you can stop at any time from the notification.</p>
+            <p>You can deny or revoke the location permission in your device settings. The bike controls keep working without it.</p>
 
             <h2>Weather Data</h2>
-            <p>73MATE uses the Open-Meteo API to display weather information based on your approximate location. Only coordinate data is sent to retrieve weather forecasts. No personal information is included in these requests.</p>
+            <p>73MATE uses the Open-Meteo API to display weather, sunrise and sunset for where you are. Only your coordinates are sent to retrieve the forecast. No personal information is included in these requests.</p>
+
+            <h2>Maps and Navigation</h2>
+            <p>When you search for a place or plan a route, the search text, your current location and the destination are sent to the map provider so it can return results:</p>
+            <ul>
+                <li>iOS: Apple Maps (<a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a>)</li>
+                <li>Android: Google Maps Platform &mdash; Maps SDK, Places API and Routes API (<a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>)</li>
+            </ul>
+            <p>These requests are made only when you use the navigation screen. They are not linked to an account in 73MATE, and we do not receive or store them.</p>
 
             <h2>Local Data Storage</h2>
-            <p>The App uses your device's local storage (UserDefaults and file system) to save:</p>
+            <p>The App uses your device's local storage to save:</p>
             <ul>
                 <li>Bike settings and preferences (mode, assist level, light)</li>
                 <li>Ride profiles</li>
@@ -97,10 +107,13 @@
                 <li>Vehicle information (serial number, firmware, ODO mileage)</li>
                 <li>Bike photos</li>
             </ul>
-            <p>This data <strong>remains solely on your device</strong> and is not transmitted to any server. Deleting the App will also delete all local data.</p>
+            <p>This data <strong>remains on your device</strong> and is not transmitted to us. If you have turned on your device's own backup (iCloud or Google backup), it may be included in that backup under your own account. Deleting the App deletes all local data.</p>
 
             <h2>Third-Party Services</h2>
-            <p>This App does not use any third-party analytics tools, advertising services, or tracking technologies.</p>
+            <p>This App does not use any third-party analytics tools, advertising services, or tracking technologies. The only outside services it contacts are the ones named above: Open-Meteo for weather, and Apple Maps (iOS) or Google Maps Platform (Android) for maps and navigation.</p>
+
+            <h2>Deleting Your Data</h2>
+            <p>73MATE has no accounts and keeps nothing about you on a server, so there is nothing for us to delete. To remove everything the App has stored, delete the App from your device.</p>
 
             <h2>Children's Privacy</h2>
             <p>This App is not directed at children under 13 and does not knowingly collect personal information from children.</p>
